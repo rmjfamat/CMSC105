@@ -20,14 +20,22 @@ public class GatherInput {
 	        for (int i = 0; i < size; i++){
 	        	String data = JOptionPane.showInputDialog("Enter input " + i);
 	        	list[i] = data;
+	        	try{
+	        		int dataInt = Integer.parseInt(data);
+	        	}
+	        	catch(Exception e){
+	        		JOptionPane.showMessageDialog(null, "Input is invalid");
+	        		i = i-1;
+	        	}
 	        }
 	        JFrame display = new JFrame();  
 	        JOptionPane.showInputDialog(display, "DATA SET", "Input", JOptionPane.QUESTION_MESSAGE,
 	            null, list, "Titan");
 	    	}
-	    	catch(Exception a){
+	    	catch(Exception e){
 	    		JOptionPane.showMessageDialog(null, "Input is invalid");
 	    	}
 	      
 	}
+
 }
