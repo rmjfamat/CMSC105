@@ -18,6 +18,12 @@ public class Menu {
     box.add(ungrouped);
     box.add(grouped);
     box.add(quit);
+	  
+
+    ButtonGroup bg = new ButtonGroup();
+    bg.add(grouped);
+    bg.add(quit);
+    bg.add(ungrouped);
     
     frame.getContentPane().setLayout(new FlowLayout(FlowLayout.CENTER));
     frame.add(box);
