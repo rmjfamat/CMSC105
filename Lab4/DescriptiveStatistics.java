@@ -23,6 +23,10 @@ public class DescriptiveStatistics extends JFrame{
 		JRadioButton ungrouped = new JRadioButton("Ungrouped Data");
 	    JRadioButton grouped = new JRadioButton("Grouped Data");
 	    JRadioButton quit = new JRadioButton("Quit");
+		ButtonGroup bg = new ButtonGroup();
+		bg.add(ungrouped);
+		bg.add(grouped);
+		bg.add(quit);
 	    Box box = Box.createVerticalBox();
 	    box.add(label);
 	    box.add(ungrouped);
