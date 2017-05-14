@@ -23,6 +23,11 @@ public class Menu extends JFrame{
 	    JRadioButton lab2 = new JRadioButton("Summarizing and Presenting Data");
 	    JRadioButton lab3 = new JRadioButton("Descritive Statistics");
 	    JRadioButton quit = new JRadioButton("Quit");
+		ButtonGroup bg = new ButtonGroup();
+		bg.add(lab1);
+		bg.add(lab2);
+		bg.add(lab3);
+		bg.add(quit);
 	    Box box = Box.createVerticalBox();
 	    box.add(label);
 	    box.add(lab1);
