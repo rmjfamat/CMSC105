@@ -24,6 +24,11 @@ public class BasicSamplingMethods extends JFrame{
 	    JRadioButton method2 = new JRadioButton("Systematic Sampling");
 	    JRadioButton method3 = new JRadioButton("Stratified Sampling");
 	    JRadioButton quit = new JRadioButton("Quit");
+		ButtonGroup bg = new ButtonGroup();
+		bg.add(method1);
+		bg.add(method2);
+		bg.add(method3);
+		bg.add(quit);
 	    Box box = Box.createVerticalBox();
 	    box.add(label);
 	    box.add(method1);
